@@ -55,9 +55,11 @@ No unhedged (naked) benchmark, transaction costs, rebalancing-frequency
 sweep or vol-misspecification study is implemented here; all of those are in
 the neural-options-lab hedging module linked above.
 
-`hedging_results.png` was produced by the original version of the script,
-which stopped one step before expiry; rerun `python options_hedging.py` to
-regenerate it with settlement included.
+On the committed seed-42 path the script prints a terminal hedging P&L of
+**$0.19** after settlement (against a $10.45 premium) and a **$0.14** standard
+deviation of the P&L time series along that path; `hedging_results.png` is the
+figure from that run, settlement step included. These two numbers describe one
+realisation and nothing else.
 
 ## Running
 
